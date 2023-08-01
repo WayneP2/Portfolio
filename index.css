@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: black;
+	color: white;
+	float: right;
+	position: sticky, top;
+	width: 75%;
+	}
+	
+h1 {
+	font-size: 200%;
+	font-family: Georgia, Sans;
+	text-align: left;
+}
+
+h2 {
+	font-size: 150%;
+	font-family: brush script m7, lucida handwriting;
+	text-align: left;
+
+}
+h3 {
+	font-size: 200%;
+	font-family: Georgia, Sans;
+	text-align: center;
+}
+p	{
+	float: right;
+	margin: 35px;
+}
+
+p2	{
+	float: right;
+	margin: 5px;
+}
+	
+dt {
+	font-size: 12px;
+	font-family: Georgia, Sans;
+	text-align: center;
+	
+}
+
+dd {
+	font-size: 10px;
+	font-family: Georgia, Sans;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+body {
+	background-position: center;
+	background-color: black;
+	padding: 5px;
+	text-align: left;
+}
+
+.column {
+  float: middle;
+  padding: 1px;
+}
+
+.column.left {
+	background-color: gray;
+}
+
+.column.middle {
+	background-color: black;
+  width: 75%;
+  color: white;
+  overflow: auto;
+  float: right;
+}
+
+.row:after {
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: gray;
+  
+}
+
+.img-1{
+	border-radius: 200px;
+	float: clear;
+}
+
+.img-2{
+	float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  border: 1px solid white;
+  background-color: black;
+}
+
+li a.active {
+  background-color: black;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+  color: white;
+text-decoration-line: underline;
+text-decoration-color: white;
+}
+
+div.footer {
+	background-color: blue;
+	text-align: center;
+	padding: 10px;
+	color: white; 
+	position: fixed, center;
+	bottom: 0;
+	width: 100%;
+}
+		
