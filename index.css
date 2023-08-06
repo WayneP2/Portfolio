@@ -10,13 +10,13 @@ header {
 	width: 75%;
 	}
 	
-h1 {
+.h1 {
 	font-size: 200%;
 	font-family: Georgia, Sans;
 	text-align: left;
 }
 
-h2 {
+.h2 {
 	font-size: 150%;
 	font-family: brush script m7, lucida handwriting;
 	text-align: left;
@@ -27,16 +27,23 @@ h3 {
 	font-family: Georgia, Sans;
 	text-align: center;
 }
-p	{
-	float: right;
-	margin: 35px;
+
+.p1	{
+	float: left;
+	margin: 100px 100px 300px 100px;
 }
 
-p2	{
+.p2	{
 	float: right;
-	margin: 5px;
+	margin: 100px 100px 100px 100px;
 }
-	
+
+.p3 {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
 dt {
 	font-size: 12px;
 	font-family: Georgia, Sans;
@@ -52,10 +59,7 @@ dd {
 }
 
 body {
-	background-position: center;
 	background-color: black;
-	padding: 5px;
-	text-align: left;
 }
 
 .column {
@@ -71,12 +75,14 @@ body {
 	background-color: black;
   width: 75%;
   color: white;
-  overflow: auto;
   float: right;
-}
+  font-size: 35px;
+ }
 
-.row:after {
-  clear: both;
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 ul {
@@ -93,12 +99,13 @@ ul {
 
 .img-1{
 	border-radius: 200px;
-	float: clear;
 }
-
 .img-2{
-	float: right;
-	padding: 20;
+	float:right;
+}
+.img-3{
+
+	margin-top: 5px;
 }
 
 li a {
@@ -123,13 +130,12 @@ text-decoration-line: underline;
 text-decoration-color: white;
 }
 
-div.footer {
+.footer {
 	background-color: blue;
-	text-align: center;
 	padding: 10px;
 	color: white; 
-	position: fixed, center;
-	bottom: 0;
 	width: 100%;
+
+	
 }
 		
