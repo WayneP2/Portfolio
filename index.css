@@ -6,19 +6,24 @@ header {
 	background-color: black;
 	color: white;
 	float: right;
-	position: sticky, top;
 	width: 75%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	}
 	
-.h1 {
+body {
+	background-color: black;
+}	
+h1 {
 	font-size: 200%;
-	font-family: Georgia, Sans;
+	font-family: brush script m7, lucida handwriting;
 	text-align: left;
 }
 
-.h2 {
-	font-size: 150%;
-	font-family: brush script m7, lucida handwriting;
+h2 {
+	font-size: 100%;
+	font-family: Georgia, Sans;
 	text-align: left;
 
 }
@@ -30,45 +35,113 @@ h3 {
 
 .p1	{
 	float: left;
-	margin: 100px 100px 300px 100px;
+	font-size: 35px;
+	margin: 90px 200px 0px 0px;
 }
 
 .p2	{
 	float: right;
-	margin: 100px 100px 100px 100px;
+	font-size: 35px;
+	margin: 90px 0px 0px 200px;
+
 }
 
 .p3 {
-	font-size: 20px;
-	color: white;
-	text-align: center;
-}
-
-dt {
 	font-size: 12px;
-	font-family: Georgia, Sans;
 	text-align: center;
-	
 }
 
-dd {
+.p4 {
+	font-size: 16px;
+	font-family: Georgia, Sans;
+	position: static;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.p5 {
 	font-size: 10px;
 	font-family: Georgia, Sans;
 	text-align: center;
-	margin-bottom: 35px;
+	margin: 2px 0px 20px 0px;
 }
 
-body {
-	background-color: black;
+.p6 {
+	font-size: 13px;
+	font-family: Georgia, Sans;
+	text-align: center;
+	margin: 0;
 }
 
+.p7 {
+	font-size: 12px;
+	font-family: Georgia, Sans;
+	text-align: center;
+	margin: 2px 0px 20px 0px;
+
+}
+.p8 {
+	float: right;
+	font-size: 15px;
+	margin: 0px 0px 1px 20px;
+
+}
+
+.p9 {
+	float: right;
+	font-size: 12px;
+	margin: 0px 0px 0px 50px;
+}
+
+.p10 {
+	float: right;
+	font-size: 12px;
+	margin: 0px 0px 150px 200px;
+}
+
+.p11 {
+	float: left;
+	font-size: 15px;
+	margin: 10px 125px 0px 0px;
+	text-align: right;
+}
+
+.p12 {
+	float: left;
+	font-size: 12px;
+	margin: 0px 100px 150px 0px;
+	text-align: left;
+}
+
+.p13 {
+	float: left;
+	font-size: 15px;
+	margin: 0px 150px 0px 0px;
+	text-align: left;
+}
+
+.p14 {
+	float: left;
+	font-size: 12px;
+	margin: 0px 200px 150px 0px;
+	text-align: left;
+}
+
+.p15 {
+	float: right;
+	font-size: 12px;
+	margin: 0px 0px 150px 400px;
+}
 .column {
   float: middle;
   padding: 1px;
 }
 
 .column.left {
-	background-color: gray;
+	background-color: gray;	
+	overflow: auto;
+	text-align: justify;
 }
 
 .column.middle {
@@ -76,7 +149,7 @@ body {
   width: 75%;
   color: white;
   float: right;
-  font-size: 35px;
+	
  }
 
 .row::after {
@@ -99,15 +172,35 @@ ul {
 
 .img-1{
 	border-radius: 200px;
+	margin: 15px 5px 10px 5px;
+	border-style: double;
+	border-color: rgb(0, 0, 190);
+	border-width: 12px;
 }
 .img-2{
-	float:right;
+	float: right;	
+	margin: 10px 0px 20px 15px;
 }
-.img-3{
 
+.img-3{
+	float: left;
 	margin-top: 5px;
 }
-
+.img-4 {
+	float: right;
+	width: 150px;
+	height: 150px;
+	border-style: solid;
+	border-color: gray;
+	border-width: 2px;
+}
+.img-5 {
+	float: left;
+	margin-top: 100;
+}
+.img-6 {
+	margin:25px 25px 25px 25px;
+}
 li a {
   display: block;
   padding: 8px 16px;
@@ -130,12 +223,53 @@ text-decoration-line: underline;
 text-decoration-color: white;
 }
 
+input[type=text], select, textarea {
+  width: 55%;
+  padding: 10px 10px;  
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  background-color: gray;
+  padding: 10px;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
 .footer {
 	background-color: blue;
-	padding: 10px;
+	padding:3px;
 	color: white; 
 	width: 100%;
-
-	
+	margin: 20px 0px 0px 0px;
 }
 		
